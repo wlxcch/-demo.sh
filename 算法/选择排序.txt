@@ -1,0 +1,19 @@
+index=0   //index为左手下标代码
+m=1   //m为轮数
+while m<a['length'] 
+    min-index=0
+    whilee(index<a['lenght']-1)
+        if(a[min-index]<=a[index])
+         //成立时什么也不做
+         //不成立时
+        else
+        min-index=index
+        end
+        index=index+1
+    end
+    t=a[m-1]
+    a[m-1]= a[min-index]
+    a[min-index]= a[m-1]
+    index=m
+    m=m+1
+end

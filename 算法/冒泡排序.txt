@@ -1,0 +1,14 @@
+while(m<a['length'])//m为轮数
+    index=0 //index为左手下标
+    while(index<=a['length'-1-m])
+         if(a[index]<a[index+1])
+           //什么也不做
+         else//元素互换，换下标
+           t=index
+           index=index+1
+           index+1=t
+        end
+        index=index+1
+    end
+    m=m+1
+end

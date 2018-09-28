@@ -1,0 +1,21 @@
+indx=0
+while(index<a['length'])
+     number=a[index]
+     if(hash[number]!=undefined)
+        hash[number]=1
+    else
+        hash[number]=hash[number]+1
+    end
+        index=index+1
+end
+index2=0,max=findmax(a),count=hash[number],newArr{}
+while(index2<max+1)
+    if(count!=undefind)
+        countindex=0
+        while(countindex<count) 
+         newArr.push()
+         countindex=countindex+1  
+    end
+  index2=index2+1
+end
+print newArr{}

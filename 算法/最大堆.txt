@@ -1,0 +1,25 @@
+int maxChildIndex;
+while(root <= count/2-1) { //待调整子堆的根节点必须是非叶子节点
+			//需要在root、letfchild、rightchild中找到最大的值，
+			//因为最后一个非叶子节点有可能没有右孩子，所以要做出判断。
+			if(root == count/2 - 1 && count % 2 == 0){
+				//节点数量为偶数时，最后一个非叶子节点只有左孩子
+				maxChildIndex = 2 * root + 1;				
+			}else{
+				int leftChildIndex = 2 * root + 1;
+				int rightChildIndex = 2 * root + 2;
+				
+				maxChildIndex = array[leftChildIndex] > array[rightChildIndex] ?
+						leftChildIndex : rightChildIndex;
+			}
+			
+			if(array[root] < array[maxChildIndex]){
+				int tmp = array[root];
+				array[root] = array[maxChildIndex];
+				array[maxChildIndex] = tmp;
+				
+				//这里很重要，继续调整因交换结构改变的子堆
+				root = maxChildIndex; 
+			}else{
+				return;
+
