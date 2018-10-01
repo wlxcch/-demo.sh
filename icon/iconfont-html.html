@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+     @font-face {
+  font-family: 'iconfont';  /* project id 860068 */
+  src: url('//at.alicdn.com/t/font_860068_4yryt39x0i4.eot');
+  src: url('//at.alicdn.com/t/font_860068_4yryt39x0i4.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_860068_4yryt39x0i4.woff') format('woff'),
+  url('//at.alicdn.com/t/font_860068_4yryt39x0i4.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_860068_4yryt39x0i4.svg#iconfont') format('svg');
+}
+    .sss::before{
+        content:'css显示\e6ee\e78a\e671 '; 
+      
+    }
+  </style>
+</head>
+<body>
+<div class="sss" style="font-family: 'iconfont';">
+  自己写转义<br>
+
+  html显示
+  &#xe6ee;&#xe78a;&#xe671;
+  <br>
+  <br>
+  html的代码和css的代码不一样
+  html ：····&#x(e6ee)代码----去掉括号
+   <br>
+  css：······\e6ee代码
+</div>
+</body>
+</html>
